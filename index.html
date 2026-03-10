@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="marka()">
+    <p id="wynik"></p>
+    <script>
+        let con = document.getElementById("wynik");
+        let gitary = ["Gibson", "Fender", "Ibanez", "Yamaha", "Harley Benton", "Epiphone", "PRS", "Jackson", "ESP", "Schecter"];
+        function marka() {
+            for (let i = 0; i < gitary.length; i++) {
+                con.innerHTML += `${[i+1]}. ${gitary[i]}<br>`;
+            }
+        }
+    </script>
+    
+</body>
+</html>
